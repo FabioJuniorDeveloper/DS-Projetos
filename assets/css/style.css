@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+:root {
+    --fonte-texto:'Open Sans', sans-serif;
+    --fonte-titulo:'Raleway', sans-serif;
+    --color-btn: #ecf072;
+    --color-text:hsl(0, 0%, 100%);
+    --color-text-alternative: #4a4b4c;
+    --color-text-v1: #121212;
+    --color-bg: #9898a2;
+    --font-size-p: 0.875rem;
+    --font-size-h1:2.625rem;
+}
+/* CONFIGURAÇÃO PADRÃO */
+body {
+    font-family: var(--fonte-texto);
+    width: 100%;
+    background-color: #878788;
+}
+section:where(.sobre,.servicos){
+    margin: 2rem 0 2rem 0;
+}
+section .container  h1 {
+    text-align: center;
+    font-size: 37px;
+    margin-bottom: 2.25rem;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.btn {
+    background: rgb(236,240,114);
+    background: linear-gradient(90deg, rgba(236,240,114,1) 34%, rgba(253,243,29,1) 85%);
+    padding: 1rem 5rem;
+    border-radius: 5rem;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    font-family: var(--fonte-titulo);
+    color: var(--color-text-v1);
+}
+
+/* HEADER */
+header {
+    height: 98px;
+    width: 100%;
+    background-color: #dadada;
+}
+header .container {
+    height: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header nav a.logo {
+    height: 100%;
+}
+header nav a.logo img {
+    height: 100%;
+    width: 100%;
+}
+header nav ul {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--fonte-titulo);
+    font-size: 1rem;
+    color: var(--color-text-v1);
+}
+
+/* MAIN */
+
+main.banner {
+    width: 100%;
+    background-color: #dadada;
+    height: calc(100vh - 98px);
+    background-image: url('/assets/imagens/wave\ \(3\).svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+main.banner .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 8rem 4rem 8rem;
+}
+
+main.banner .container .banner-text {
+    text-align: center;
+}
+main.banner .container .banner-text h1 {
+    max-width: 800px;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+    font-family: var(--fonte-titulo);
+    font-size: 42px;
+    color: var(--color-text-v1);
+}
+
+.banner-img {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-img img {
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+}
+/*  SOBRE NOS */
+
+section.sobre {
+    background-color: #878788;
+}
+
+section.sobre .container article.sobre-area {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+ 
+section.sobre .container article.sobre-texto p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+section.sobre .container article.sobre-texto a {
+    margin-top: 1rem;
+}
+section.sobre .container article.sobre-area .sobre-img img {
+    width: 100%;
+    filter: drop-shadow( 5px 5px 4px #121212);
+}
+
+/*  SERVIÇOS */
+ 
