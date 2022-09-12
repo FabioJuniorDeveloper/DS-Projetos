@@ -35,5 +35,5 @@ window.addEventListener('scroll', DecidirBottonWhatsApp);
 //         document.querySelector('main').style.paddingTop = '100px';
 //     }
 // }
-window.addEventListener('scroll', HeaderPosition);
+// window.addEventListener('scroll', HeaderPosition);
  

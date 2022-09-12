@@ -24,7 +24,7 @@ html {
 /* CONFIGURAÇÃO PADRÃO */
 @font-face {
     font-family:'Stylus' ;
-    src: url('/assets/fonts/stylus_bt.ttf') format('truetype');
+    src: url('../fonts/stylus_bt.ttf') format('truetype');
 }
 body {
     font-family: var(--fonte-texto);
@@ -47,6 +47,9 @@ body {
     transition: all .3s;
     background: rgb(236,240,114);
     background: linear-gradient(90deg, rgba(236,240,114,1) 34%, rgba(253,243,29,1) 85%);
+}
+.scrollup i {
+    font-size: 24px;
 }
 a.whatsapp {
     bottom: 65px;
@@ -154,7 +157,7 @@ main.banner {
     width: 100%;
     background-color: #dadada;
     height: calc(100vh - 98px);
-    background-image: url('/assets/imagens/wave\ \(3\).svg');
+    background-image: url('../imagens/fundo.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
