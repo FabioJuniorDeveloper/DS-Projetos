@@ -5,7 +5,7 @@
 }
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 70px;
+    scroll-padding-top: 128px;
 }
 
 /* VARIÁVEIS */
@@ -18,6 +18,8 @@ html {
     --color-bg: #9898a2;
     --font-size-p: 0.875rem;
     --font-size-h1:2.625rem;
+    --bg-whatsapp: #34af23;
+    --hover-whatsapp: #56d045;
 }
 /* CONFIGURAÇÃO PADRÃO */
 @font-face {
@@ -29,8 +31,34 @@ body {
     width: 100%;
     background-color: #878788;
 }
+.scrollup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    position: fixed;
+    right: 13px;
+    bottom: 20px;
+    z-index: 999;
+    border-radius: 0.4rem;
+    transition: all .3s;
+    background: rgb(236,240,114);
+    background: linear-gradient(90deg, rgba(236,240,114,1) 34%, rgba(253,243,29,1) 85%);
+}
+a.whatsapp {
+    bottom: 65px;
+    background: none;
+    background-color: var(--bg-whatsapp);
+    text-decoration: none;
+}
+a.whatsapp:hover {
+    background-color: var(--hover-whatsapp);
+}
 section:where(.sobre,.servicos){
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0 4rem 0;
 }
 section .container  h1 {
     text-align: center;
@@ -60,6 +88,9 @@ header {
     height: 98px;
     width: 100%;
     background-color: #dadada;
+    /* position: fixed;
+    z-index: 88;
+    box-shadow: 0 2px 7px rgb(14 55 54 / 15%); */
 }
 header .container {
     height: 100%;
@@ -127,6 +158,7 @@ main.banner {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
+    overflow: hidden;
 }
 main.banner .container {
     display: flex;
@@ -189,6 +221,105 @@ section.sobre .container article.sobre-area .sobre-img img {
 }
 
 /*  SERVIÇOS */
+
+
+section.servicos .titulo-section{
+    position: relative;
+    margin-bottom: 2rem;
+}
+section.servicos .titulo-logo{
+    width: 167px;
+    height: 85px;
+    position: absolute;
+    top: -9px;
+    bottom: 0;
+    right: 1%;
+}
+
+section.servicos .titulo-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+section.servicos h2 {
+    font-size: 26px;
+    text-align: center;
+}
+
+.servicos-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.servicos-area article {
+    width: 36%;
+}
+.servicos-area article img {
+    width: 100%;
+    max-height: 249px;
+    object-fit: cover;
+    border-top-left-radius: 31px;
+    border-bottom-right-radius: 43px;
+}
+
+.servicos-area-text {
+    text-align: center;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.servicos-area-text ul, .servicos-area-text p  {
+    max-width: 500px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+}
+.servicos-area-text ul li {
+    margin-bottom: 1rem;
+}
+.servicos-area-text ul li::marker {
+    color: #FFF;
+}
+
+.servicos-area-text ul li.check-marker::marker {
+    content: ' ✓ ';
+    font-size: 29px;
+}
+
+section .text-start {
+    text-align: start;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 3rem;
+}
+/* CAPACIDADE */
+.servicos-area-text p {
+    max-width: 660px;
+    margin-bottom: 2rem;
+}
+
+section#capacidade .servicos-area-text {
+    flex-direction: column;
+    align-items: center;
+}
+/* PARCERIAS */
+
+section#Parceiros .parceiros-empresas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-text-alternative);
+    padding: 1rem;
+}
+
+section#Parceiros .parceiros-empresas div img {
+    min-width: 100px;
+    width: 100%;
+    max-height: 98px;
+    border-top-left-radius: 31px;
+    border-bottom-right-radius: 26px;
+}
+
 
 
 

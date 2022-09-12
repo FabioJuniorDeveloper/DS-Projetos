@@ -9,24 +9,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="http://fonts.cdnfonts.com/css/stylus-bt" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     <title>DS Projetos</title>
 </head>
 <body>
+    <button onclick="ScrollUp()" class="scrollup">
+        <box-icon name='up-arrow-alt' color='#121212' ></box-icon>
+    </button>
+
+    <a href="https://wa.me/5511997842560" class="scrollup whatsapp" onclick="ScrollUp()" target="_blank">
+        <box-icon name='whatsapp' type='logo' color='#ffffff' ></box-icon>
+    </a>
    <header>
     <div class="container">
         <nav>
             <ul>
                 <li><a href="#sobre" class="hvr-underline-from-left">A Empresa</a></li>
                 <li>
-                    <a href="#servicos" class="hvr-underline-from-left">Serviços</a>
+                    <a href="#" class="hvr-underline-from-left">Serviços</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#" class="hvr-underline-from-left">Área de Atuação</a>  </li>
-                        <li><a href="#" class="hvr-underline-from-left">Serviços Executados</a>  </li>
+                        <li><a href="#servicos" class="hvr-underline-from-left">Área de Atuação</a>  </li>
+                        <li><a href="#servicos-two" class="hvr-underline-from-left">Serviços Executados</a>  </li>
                     </ul>
                 </li>
-                <li><a href="" class="hvr-underline-from-left">Capacidade de Execução</a></li>
-                <li><a href="" class="hvr-underline-from-left">Parcerias</a></li>
+                <li><a href="#capacidade" class="hvr-underline-from-left">Capacidade de Execução</a></li>
+                <li><a href="#Parceiros" class="hvr-underline-from-left">Parcerias</a></li>
                 <li><a href="" class="hvr-underline-from-left">Contatos</a></li>
             </ul>
         </nav>
@@ -53,7 +60,7 @@
                     <p>  
                         Contamos com profissionais técnicos altamente capacitados, dispondo de uma estrutura com ferramental e instrumentos adequados, para oferecermos serviços com total qualidade e de alta competitividade aos nossos clientes.
                         </p>
-                    <a href="#" class="btn hvr-grow">Entrar em contato</a>
+                    <a href="https://wa.me/5511997842560" target="_blank" class="btn hvr-grow">Entrar em contato</a>
                 </article>
             </article>
         </div>
@@ -61,18 +68,202 @@
 
 <section id="servicos" class="servicos">
     <div class="container">
-        <h1 class="titulo-section">Serviços</h1>
-        <h2></h2>
+        <article class="titulo-section">
+            <h1>Serviços</h1>
+            <div class="titulo-logo">
+                <img src="assets/imagens/logo-removebg-preview.png" alt="">
+            </div>
+            <h2>Área de Atuação</h2>
+        </article>
+         
         <article>
             <section class="servicos-area">
+                <article>
+                    <img src="assets/imagens/Imagem-servico-1.jpeg" alt="">
+                </article>
+                <article>
+                    <img src="assets/imagens/Imagem-servico-2.jpeg" alt="">
+                </article>
             </section>
-            <section class="servicos-area"></section>
+            <section class="servicos-area-text">
+                <ul>
+                    <li class=""><h3>Projetos de Redes Ópticas e Metálicas</h3></li>
+                    <li>Levantamento Sócio-Econômico em campo para obtenção de dados;</li>
+                    <li>Elaboração de projetos de rede aérea e rede subterrânea;</li>
+                    <li>Execução de desenho com a utilização do Software Auto-Cad, no padrão solicitado pela empresa contratante e de acordo com as exigências dos órgãos públicos competentes;</li>
+                </ul>
+
+            </section>
+            <section class="servicos-area">
+                <article>
+                    <img src="assets/imagens/Imagem-servico-3.jpeg" alt="">
+                </article>
+                <article>
+                    <img src="assets/imagens/Imagem-servico-4.jpeg" alt="">
+                </article>
+            </section>
         </article>
     </div>
 </section>
+
+<section id="servicos-two" class="servicos">
+    <div class="container">
+        <article class="titulo-section">
+            <h1>Serviços</h1>
+            <div class="titulo-logo">
+                <img src="assets/imagens/logo-removebg-preview.png" alt="">
+            </div>
+            <h2>Serviços Executados</h2>
+        </article>
+         
+        <article>
+            <section class="servicos-area">
+                <article>
+                    <img src="assets/imagens/Imagem-servico-5.jpeg" alt="">
+                </article>
+                <article>
+                    <img src="assets/imagens/Imagem-servico-6.jpeg" alt="">
+                </article>
+            </section>
+            <section class="servicos-area-text text-start">
+                <ul>
+                    <li class="check-marker">
+                        <h3>Rede Metálica Secundária (M’san)
+                        </h3>
+                    </li>
+                    <li>Levantamento em campo;</li>
+                    <li>Anteprojeto para aprovação do comitê;
+                    </li>
+                    <li>Projeto Executivo;
+                    </li>
+                    <li>Desenho em AutoCad;
+                    </li>
+                    <li>Planilhamento final do projeto.
+                    </li>
+                </ul>
+                <ul>
+                    <li class="check-marker">
+                        <h3>Rede Metálica Secundária (M’san)
+                        </h3>
+                    </li>
+                    <li>Levantamento em campo;</li>
+                    <li>Anteprojeto para aprovação do comitê;
+                    </li>
+                    <li>Projeto Executivo;
+                    </li>
+                    <li>Desenho em AutoCad;
+                    </li>
+                    <li>Planilhamento final do projeto.
+                    </li>
+                </ul>
+                <ul>
+                    <li class="check-marker">
+                        <h3>Rede Metálica Secundária (M’san)
+                        </h3>
+                    </li>
+                    <li>Levantamento em campo;</li>
+                    <li>Anteprojeto para aprovação do comitê;
+                    </li>
+                    <li>Projeto Executivo;
+                    </li>
+                    <li>Desenho em AutoCad;
+                    </li>
+                    <li>Planilhamento final do projeto.
+                    </li>
+                </ul>
+                <ul>
+                    <li class="check-marker">
+                        <h3>Rede Metálica Secundária (M’san)
+                        </h3>
+                    </li>
+                    <li>Levantamento em campo;</li>
+                    <li>Anteprojeto para aprovação do comitê;
+                    </li>
+                    <li>Projeto Executivo;
+                    </li>
+                    <li>Desenho em AutoCad;
+                    </li>
+                    <li>Planilhamento final do projeto.
+                    </li>
+                </ul>
+
+            </section>
+            <section class="servicos-area">
+                <article>
+                    <img src="assets/imagens/Imagem-servico-7.jpeg" alt="">
+                </article>
+                <article>
+                    <img src="assets/imagens/Imagem-servico-4.jpeg" alt="">
+                </article>
+            </section>
+        </article>
+    </div>
+</section>
+
+<section id="capacidade" class="CapacidadeExecução servicos">
+    <div class="container">
+        <article class="titulo-section">
+            <h1>Capacidade de Execução</h1>
+            <div class="titulo-logo">
+                <img src="assets/imagens/logo-removebg-preview.png" alt="">
+            </div>
+        </article>
+        <article class="Capacidade">
+            <section class="servicos-area-text">
+                <p>A DS Projetos tem hoje um potencial de trabalho para atender uma grande demanda de projetos de rede externa em todas suas atividades, assim, estamos em condições de oferecer um volume de execução de serviços anual em termos HP’s (Home Pass) e/ou quilometragem, conforme quadro abaixo:</p>
+                <ul>
+                    <li class="check-marker">Projetos de Rede Óptica (FTTx)	-	300 KHP’s / ano.</li>
+                    <li class="check-marker">Projetos de Anel Óptico		-	4.800 Km / ano.</li>
+                    <li class="check-marker">Projetos de Rede Metálica (Msan)	-	1.200 Km / ano.</li>
+                </ul>
+            </section>
+        </article>
+    </div>
+</section>
+
+<section id="Parceiros" class="CapacidadeExecução servicos">
+    <div class="container">
+        <article class="titulo-section">
+            <h1>Parceiros</h1>
+            <div class="titulo-logo">
+                <img src="assets/imagens/logo-removebg-preview.png" alt="">
+            </div>
+        </article>
+        <article>
+            <section class="servicos-area-text">
+                
+                <ul>
+                    <li >Icomon Tecnologia Ltda.		–	Telefônica/Vivo/Huawei </li>
+                    <li >Ability Tecnologia e Serviços S/A	–	Telefônica/Vivo – Claro/Embratel  </li>
+                    <li >Logictel S/A				–	Telefônica/Vivo</li>
+                    <li>Valtelina Telecom				–	Tim</li>
+                    <li>F.P.A. Telecom				-	Claro</li>
+
+
+
+                </ul>
+            </section>
+        </article>
+         
+        
+    </div>
+    <article class="parceiros-empresas">
+        <div><img src="assets/imagens/Empresa1.jpeg" alt=""></div>
+        <div><img src="assets/imagens/Empresa2.jpeg" alt=""></div>
+        <div><img src="assets/imagens/Empresa3.jpeg" alt=""></div>
+        <div><img src="assets/imagens/Empresa4.jpeg" alt=""></div>
+        <div><img src="assets/imagens/Empresa5.jpeg" alt=""></div>
+    </article>
+</section>
+
+<footer>
+
+</footer>
    
 
 
    <link rel="stylesheet" href="assets/css/Hover-master/css/hover.css">
+   <script src="assets/JS/script.js"></script>
+    
 </body>
 </html>
