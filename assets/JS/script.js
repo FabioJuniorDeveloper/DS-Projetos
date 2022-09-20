@@ -38,31 +38,20 @@ window.addEventListener('scroll', DecidirBottonWhatsApp);
 
 const dropdown = document.querySelector('.dropdown-menu');
 
-// function SubMenu () {
-//     if (dropdown.style.display = 'none') {
-//         document.querySelector('.submenu').style.margin = '0';
-//         dropdown.style.display = 'block';
-//         console.log('DEu certo')
-//     } 
-// }
-
-// function TirarMenuPC () {
-//     if (dropdown.style.display = 'block') {
-//         document.querySelector('.submenu').style.margin = '0';
-//         dropdown.style.display = 'none';
-//         console.log('Sumiu');
-//     }
-// }
-
 function SubMenuCell () {
     if (dropdown.style.display = 'none') {
-        document.querySelector('.submenu').style.margin = '0px 0px 96px 0';
+        document.querySelector('.submenu').classList.add("comMargin");
         dropdown.style.display = 'block';
-        console.log('DEu certo')
-    } else if (dropdown.style.display = 'block') {
-        document.querySelector('.submenu').style.margin = '0';
-        dropdown.style.display = 'none';
-        console.log('Sumiu');
-    }
+
+    } 
 }
- 
+
+function TirarMenu () {
+        document.querySelector('.submenu').classList.remove("comMargin");
+         document.querySelector('.submenu').classList.add("semMargin");
+         dropdown.style.display = 'none';
+
+}
+window.addEventListener('scroll', TirarMenu);
+
+
