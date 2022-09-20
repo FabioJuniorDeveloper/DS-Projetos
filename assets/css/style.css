@@ -47,6 +47,15 @@ section:where(#sobre,#capacidade,#Parceiros,#Contatos) {
     font-family:'Stylus' ;
     src: url('../fonts/stylus_bt.ttf') format('truetype');
 }
+.menuMobile {
+    display: none;
+    width: 25px;
+    height: 25px;
+}
+.mm_line {
+    height: 3px;
+    background-color: #121212;
+}
 body {
     font-family: var(--fonte-texto);
     width: 100%;
@@ -122,7 +131,7 @@ header .container {
 
 header nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     height: 100%;
     width: 100%;
@@ -342,6 +351,7 @@ section#Parceiros .parceiros-empresas {
     justify-items: center;
     background-color: var(--color-text-alternative);
     padding: 1rem;
+    gap: 1rem;
 }
 
 section#Parceiros .parceiros-empresas div img {
@@ -412,7 +422,239 @@ footer {
     margin-top: 16rem;
 }
 
+/* RESPONSIVIDADE */
+@media (min-width:1024px) {
+    .submenu {
+        margin: 0;
+    }
+}
+@media (min-width:769px) and (max-width:1024px) {
+    .container {
+        padding: 0 20px;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 98px;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        background: #dadada;
+        gap: 0;
+    }
+    header nav ul li {
+        padding: 1rem;
+        width: 100%;
+    }
+    header ul.dropdown-menu {
+        top: 68px;
+        width: 100%;
+    }
+    header ul.dropdown-menu li {
+        padding: 0;
+    }
+    header ul.dropdown-menu li a {
+        display: inline-block;
+    }
+    section.sobre .container article.sobre-area .sobre-img img {
+        width: 64%;
+    }
+    section.sobre .container article.sobre-area, .contatos article.sobre-area {
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .sobre-img, .sobre-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
+    .servicos-area article img {
+        max-height: 163px;
+    }
+    section#Contatos .sobre-area article h3 {
+        margin-bottom: 1rem;
+    }
+    section#Contatos .sobre-area article h4 {
+        font-size: 1.1875rem;
+    }
+     
+}
+
+@media (min-width:426px) and (max-width:768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 98px;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        background: #dadada;
+        gap: 0;
+    }
+    header nav ul li {
+        padding: 1rem;
+        width: 100%;
+    }
+    header ul.dropdown-menu {
+        top: 68px;
+        width: 100%;
+    }
+    header ul.dropdown-menu li {
+        padding: 0;
+    }
+    header ul.dropdown-menu li a {
+        display: inline-block;
+    }
+    section.sobre .container article.sobre-area .sobre-img img {
+        width: 64%;
+    }
+    section.sobre .container article.sobre-area, .contatos article.sobre-area {
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .sobre-img, .sobre-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .banner-img img {
+        width: 166%;
+    }
+
+    .servicos-area article img {
+        max-height: 163px;
+    }
+    section#Contatos .sobre-area article h3 {
+        margin-bottom: 1rem;
+    }
+    section#Contatos .sobre-area article h4 {
+        font-size: 1.1875rem;
+    }   
+
+    div.responsaveis-container {
+        flex-direction: column;
+    }
+    section.servicos .titulo-logo {
+        width: 106px;
+        height: 66px;
+    }
+} 
+
+@media (max-width:425px) {
+    html {
+        font-size: 14px;
+    }
+    .btn {
+        padding: 1rem 3rem;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 98px;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        background: #dadada;
+        gap: 0;
+    }
+    header nav ul li {
+        padding: 1rem;
+        width: 100%;
+    }
+    header ul.dropdown-menu {
+        top: 68px;
+        width: 100%;
+    }
+    header ul.dropdown-menu li {
+        padding: 0;
+    }
+    header ul.dropdown-menu li a {
+        display: inline-block;
+    }
+    section.sobre .container article.sobre-area .sobre-img img {
+        width: 64%;
+    }
+    section.sobre .container article.sobre-area, .contatos article.sobre-area {
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .sobre-img, .sobre-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .banner-img img {
+        width: 275%;
+    }
+
+    .servicos-area article img {
+        max-height: 75px;
+        min-height: 75px;
+    }
+    section#Contatos .sobre-area article h3 {
+        margin-bottom: 1rem;
+    }
+    section#Contatos .sobre-area article h4 {
+        font-size: 1.1875rem;
+    }   
+
+    div.responsaveis-container {
+        flex-direction: column;
+    }
+    section.servicos .titulo-logo {
+        width: 106px;
+        height: 66px;
+    }
+    .servicos-area-text ul.padding {
+        padding: 1.5625rem;
+    }
+    .servicos-area-text ul, .servicos-area-text p {
+         
+        font-size: 17px;
+    }
+    section .text-start {
+        gap: 0;
+    }
+    section.sobre .container article.sobre-texto p, .contatos article.sobre-area {
+        font-size: 18px;
+    }
+}
 
 
 

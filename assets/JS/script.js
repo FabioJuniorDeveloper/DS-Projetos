@@ -4,6 +4,15 @@ function ScrollUp () {
         behavior: 'smooth'
     })
 }
+window.onload = function () {
+    document.querySelector(".menuMobile").addEventListener("click", function () {
+        if (document.querySelector("nav ul").style.display == 'flex') {
+            document.querySelector("nav ul").style.display = 'none'
+        } else {
+            document.querySelector("nav ul").style.display = 'flex'
+        }
+    });
+};
 
 const btn = document.querySelector('.scrollup');
 const btnWhatsApp = document.querySelector('a.whatsapp');
@@ -27,13 +36,33 @@ function DecidirBottonWhatsApp (){
 }
 window.addEventListener('scroll', DecidirBottonWhatsApp);
 
-// function HeaderPosition () {
-//     if (window.scrollY == 0) {
-//         header.style.position = 'static';
-//     } else {
-//         header.style.position = 'fixed';
-//         document.querySelector('main').style.paddingTop = '100px';
+const dropdown = document.querySelector('.dropdown-menu');
+
+// function SubMenu () {
+//     if (dropdown.style.display = 'none') {
+//         document.querySelector('.submenu').style.margin = '0';
+//         dropdown.style.display = 'block';
+//         console.log('DEu certo')
+//     } 
+// }
+
+// function TirarMenuPC () {
+//     if (dropdown.style.display = 'block') {
+//         document.querySelector('.submenu').style.margin = '0';
+//         dropdown.style.display = 'none';
+//         console.log('Sumiu');
 //     }
 // }
-// window.addEventListener('scroll', HeaderPosition);
+
+function SubMenuCell () {
+    if (dropdown.style.display = 'none') {
+        document.querySelector('.submenu').style.margin = '0px 0px 96px 0';
+        dropdown.style.display = 'block';
+        console.log('DEu certo')
+    } else if (dropdown.style.display = 'block') {
+        document.querySelector('.submenu').style.margin = '0';
+        dropdown.style.display = 'none';
+        console.log('Sumiu');
+    }
+}
  
