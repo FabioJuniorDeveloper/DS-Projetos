@@ -59,11 +59,11 @@ window.addEventListener('scroll', TirarMenu);
 function NãoTirarMenuPc() {
     if (window.screen.width >= 300 && window.screen.width <= 1024) {
         document.querySelector('.teste').style.display = 'none';
-        console.log(' tirando menu')
+        
     }
     if (window.screen.width >= 1024) {
         document.querySelector('.teste').style.display = 'flex';
-        console.log(' não tirando menu')
+        
     }
 }
 
