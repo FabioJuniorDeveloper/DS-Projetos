@@ -67,6 +67,8 @@ function NãoTirarMenuPc() {
     }
 }
 
+
+
 window.addEventListener('scroll', NãoTirarMenuPc);
 
 
